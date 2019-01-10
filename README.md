@@ -4,9 +4,9 @@ Then you can see the API running on [http://localhost:8082](http://localhost:808
 
 
 
-### Components Unit - Expenses Tracker
-- GET: `http://localhost:8082/api/products`
-- GET: `http://localhost:8082/api/items`
+### Expenses Tracker
+- GET: `http://localhost:8082/api/expenses`
+- GET: `http://localhost:8082/api/expenses`
 
 ### API Unit - Expenses Tracker
 - GET (all expenses) / POST (add expenses): `http://localhost:8082/api/expenses`
