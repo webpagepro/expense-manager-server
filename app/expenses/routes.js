@@ -39,15 +39,17 @@ router.put('/expenses/:id', (req, res) => {
   res.json(updatedeExpense)
 })
 
-router.patch('/expenses/cart/add/:id', function (req, res) {
+router.patch('/expenses/debt/add/:id', function (req, res) {
   const expense = db.expenses.find(req.params.id)
-  expense.expense_paid = false
+  expense.expense_paid = false,
+  expense.expense_credited = true
   res.json(expense)
 })
 
-router.patch('/expenses/cart/remove/:id', function (req, res) {
+router.patch('/expenses/debt/remove/:id', function (req, res) {
   const expense = db.expenses.find(req.params.id)
-  expense.expense_paid = true
+  expense.expense_paid = true,
+  expense.expense_credited = false
   res.json(expense)
 })
 
