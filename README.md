@@ -11,8 +11,8 @@ Then you can see the API running on [http://localhost:8082](http://localhost:808
 ### API Unit - Expenses Tracker
 - GET (all expenses) / POST (add expenses): `http://localhost:8082/api/expenses`
 - DELETE: `http://localhost:8082/api/expenses/:id`
-- PATCH (add expenses to cart): `http://localhost:8082/api/expenses/add/:id`
-- PATCH (remove expenses from cart): `http://localhost:8082/api/expenses/remove/:id`
+- PATCH (add expenses to debt): `http://localhost:8082/api/expenses/debt/add/id`
+- PATCH (remove expenses from debt): `http://localhost:8082/api/expenses/debt/remove/id`
  
 
  
